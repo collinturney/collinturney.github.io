@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "SmokerPi"
+date:   2016-01-25 13:17:19 -0600
+categories: cooking raspberry pi r ggplot
+---
+
+Testing....
+
+{% highlight r %}
+
+library(ggplot2)
+
+data = read.csv("smokelog_20160124-184539.csv", header=TRUE)
+data$date <- data$date - (5 * 3600)
+data$date <- ISOdatetime(1970,1,1,0,0,0) + data$date
+
+ggplot(data,aes(x = date,y = smoker_temp)) + 
+  geom_point(aes(colour = smoker_temp)) +
+  scale_colour_gradient2(low = "blue", mid = "green" , high = "red", midpoint = 16) + 
+  geom_smooth(color = "grey30",size = 1) +
+  scale_y_continuous(limits = c(50,300), breaks = seq(50,300,50)) +
+  ggtitle ("Cooking Temperature") +
+  xlab("Time") + ylab("Temperature (F)")
+
+ggplot(data,aes(x = date,y = ambient_temp)) + 
+  xlab("Time") +
+  ylab("Temperature (F)") +
+  geom_point(aes(colour = ambient_temp)) +
+  geom_smooth(color = "grey30",size = 1) +
+  scale_y_continuous(limits = c(45,60), breaks = seq(45,60,5)) +
+  ggtitle ("Ambient Temperature")
+
+{% endhighlight %}
