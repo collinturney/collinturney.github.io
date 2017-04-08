@@ -6,9 +6,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-title: family, tinkering, and oxford commas
+title: Collin Turney
 email: 
-description:
+description: family, tinkering, and oxford commas
 baseurl: ""
 url: "https://collinturney.github.io"
 github_username: collinturney
