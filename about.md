@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<img style="float: right; margin-right: 16px; margin-top: 4px;" src="/assets/falls.jpg">
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Collin hails from a [small
+town](https://www.google.com/maps/place/Gillham,+AR+71841/@34.1690349,-94.317943,16z/)
+in rural Arkansas where he grew up tinkering with computers and chasing snakes.
+He went on to study Computer Science at Arkansas Tech University and has worked
+as a Software Engineer for over ten years.
