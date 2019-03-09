@@ -5,7 +5,7 @@ date:   2011-03-17 03:19:23 -0600
 categories: linux kernel remote ubuntu migrated-posts
 ---
 
-Well it happened. I purchased a piece of hardware that as best I could tell would work with Ubuntu right out of the box but that didn't turn out to be the case. The hardware was a MCE remote made by AVS (HA-IR01SV) and I found it for only $20. The problem was that I could get no output from irw while pressing keys on the remote, '/dev/lirc0' did not exist, and I got nothing descriptive from the kernel logs when plugging in the IR receiver.
+So, I purchased a piece of hardware that as best I could tell would work with Ubuntu right out of the box but that didn't turn out to be the case. The hardware was a MCE remote made by AVS (HA-IR01SV) and I found it for only $20. The problem was that I could get no output from irw while pressing keys on the remote, '/dev/lirc0' did not exist, and I got nothing descriptive from the kernel logs when plugging in the IR receiver.
 
     [570159.523784] usb 4-2: new full speed USB device using ohci_hcd and address 9
     [570159.760275] usb 4-2: configuration #1 chosen from 1 choice

@@ -38,71 +38,77 @@ The included Makefile will build the library as well as the included examples.
 
 A simple HTTP request:
 
-    #include <Request.h>
-    #include <Response.h>
+{% highlight cpp %}
+#include <Request.h>
+#include <Response.h>
 
-    int main() {
-       HTTP::Request request;
-       HTTP::Response response;
+int main() {
+    HTTP::Request request;
+    HTTP::Response response;
 
-       response = request.get("http://httpbin.org/status/418");
+    response = request.get("http://httpbin.org/status/418");
 
-       puts(response.text.c_str());
+    puts(response.text.c_str());
 
-       return 0;
-    }
+    return 0;
+}
+{% endhighlight %}
 
 HTTP request with modified headers:
 
-    #include <Request.h>
-    #include <Response.h>
+{% highlight cpp %}
+#include <Request.h>
+#include <Response.h>
 
-    int main() {
+int main() {
 
-       HTTP::Request request;
-       HTTP::Headers headers;
-       HTTP::Response response;
+   HTTP::Request request;
+   HTTP::Headers headers;
+   HTTP::Response response;
 
-       headers.set("Accept", "application/json");
+   headers.set("Accept", "application/json");
 
-       response = request.get("http://httpbin.org/headers", headers);
+   response = request.get("http://httpbin.org/headers", headers);
 
-       puts(response.text.c_str());
+   puts(response.text.c_str());
 
-       return 0;
-    }
+   return 0;
+}
+{% endhighlight %}
 
 Here is another example that includes examining response metadata. The response object also includes the parsed HTTP response headers and the response as JSON for logging or downstream parsing. HTTP headers can be complex and expensive to parse perfectly. Here, I was just looking for an approximation so a key/value store met my needs just fine. I may come back later and add in support for the more complex headers with nested structures, etc (or use a library of some kind).
 
-    #include <Request.h>
-    #include <Response.h>
+{% highlight cpp %}
+#include <Request.h>
+#include <Response.h>
 
-    using HTTP::Request;
-    using HTTP::Response;
-    using HTTP::StatusCode;
+using HTTP::Request;
+using HTTP::Response;
+using HTTP::StatusCode;
 
-    int main() {
+int main() {
 
-       Request request;
-       Response response;
+   Request request;
+   Response response;
 
-       response = request.get("http://httpbin.org/status/407");
+   response = request.get("http://httpbin.org/status/407");
 
-       if (response.ok && response.code == StatusCode::PROXY_AUTHENTICATION_REQUIRED) {
-          printf("code        = [%d]\n", response.code);
-          printf("codeClass   = [%d]\n", response.codeClass);
-          printf("latency     = [%.2f]\n", response.elapsed);
-          printf("date header = [%s]\n", response.headers.get("Date").c_str());
+   if (response.ok && response.code == StatusCode::PROXY_AUTHENTICATION_REQUIRED) {
+      printf("code        = [%d]\n", response.code);
+      printf("codeClass   = [%d]\n", response.codeClass);
+      printf("latency     = [%.2f]\n", response.elapsed);
+      printf("date header = [%s]\n", response.headers.get("Date").c_str());
 
-          puts("response as json:");
-          puts(response.toString());
-       }
-       else {
-          puts("Something went wrong!");
-       }
+      puts("response as json:");
+      puts(response.toString());
+   }
+   else {
+      puts("Something went wrong!");
+   }
 
-       return 0;
-    }
+   return 0;
+}
+{% endhighlight %}
 
 ## Concurrency
 
