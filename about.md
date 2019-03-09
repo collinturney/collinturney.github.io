@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![plot]({{ site.baseurl }}/assets/falls.jpg)
+![plot]({{ site.baseurl }}/static/falls.jpg)
 
 Originally I'm from a small town in rural Arkansas where, with little else to do, I was always tinkering with something or involved in some kind of project. These days I spend most of my time writing software and spending time with the family.
 

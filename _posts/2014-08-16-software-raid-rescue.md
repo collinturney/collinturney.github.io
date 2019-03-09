@@ -8,7 +8,7 @@ After rsync-ing files for years to achieve some kind of redundancy I finally dec
 
 I wasn't worried about the dead drive because I had a copy of SpinRite which has saved me on numerous occasions. Unfortunately, this would not be another SpinRite success to add to the list. Every time I attempted to run a level 2 recovery on the crippled drive I would get this lovely message after several hours of churning:
 
-![Spinrite failure]({{ site.baseurl }}/assets/spinrite-failure.jpg){: .center-image}
+![Spinrite failure]({{ site.baseurl }}/static/spinrite-failure.jpg){: .center-image}
 
 Isn't that a daisy? It wasn't ideal but I eventually got everything shuffled around without my main backup drive in the loop.
 

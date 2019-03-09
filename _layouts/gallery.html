@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <script src="{{ "/assets/js/lightbox-plus-jquery.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/static/js/lightbox-plus-jquery.min.js" | prepend: site.baseurl }}"></script>
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
@@ -16,7 +16,7 @@ layout: default
     </p>
     <p>
       {% for image in page.gallery %}
-        <a href="{{ image.path }}" data-lightbox="gallery" data-title="{{ image.path | remove: "/assets/images/" }}">
+        <a href="{{ image.path }}" data-lightbox="gallery" data-title="{{ image.path | remove: "/static/images/" }}">
           <img src="{{ image.path | append: "_thumb.png" }}" />
         </a>
       {% endfor %}
