@@ -15,9 +15,10 @@ layout: default
       {{ content }}
     </p>
     <p>
-      {% for image in page.images %}
-        <!-- <a href="{{ image.path }}"><img src="{{ image.thumbnail }}" alt="{{ image.title}}"/></a> -->
-        <a href="{{ image.path }}" data-lightbox="gallery" data-title="{{ image.title }}"><img src="{{ image.thumbnail }}" /></a>
+      {% for image in page.gallery %}
+        <a href="{{ image.path }}" data-lightbox="gallery" data-title="{{ image.path | remove: "/assets/images/" }}">
+          <img src="{{ image.path | append: "_thumb.png" }}" />
+        </a>
       {% endfor %}
     </p>
   </div>

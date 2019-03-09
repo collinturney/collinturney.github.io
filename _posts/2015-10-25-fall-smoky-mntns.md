@@ -3,31 +3,15 @@ layout: gallery
 title:  "Smoky Mountain Fall Colors"
 date:   2015-10-25 10:23:03 -0600
 categories: gallery trip smoky mountains
-images:
-  - path: /assets/images/sm_1.jpg
-    thumbnail: /assets/images/sm_1.jpg_thumb.png
-    title: sm_1
-  - path: /assets/images/sm_2.jpg
-    thumbnail: /assets/images/sm_2.jpg_thumb.png
-    title: sm_2
-  - path: /assets/images/sm_3.jpg
-    thumbnail: /assets/images/sm_3.jpg_thumb.png
-    title: sm_3
-  - path: /assets/images/sm_4.jpg
-    thumbnail: /assets/images/sm_4.jpg_thumb.png
-    title: sm_4
-  - path: /assets/images/sm_5.jpg
-    thumbnail: /assets/images/sm_5.jpg_thumb.png
-    title: sm_5
-  - path: /assets/images/sm_6.jpg
-    thumbnail: /assets/images/sm_6.jpg_thumb.png
-    title: sm_6
-  - path: /assets/images/sm_7.jpg
-    thumbnail: /assets/images/sm_7.jpg_thumb.png
-    title: sm_7
-  - path: /assets/images/sm_8.jpg
-    thumbnail: /assets/images/sm_8.jpg_thumb.png
-    title: sm_8
+gallery:
+  - path: /assets/images/smokys/1.jpg
+  - path: /assets/images/smokys/2.jpg
+  - path: /assets/images/smokys/3.jpg
+  - path: /assets/images/smokys/4.jpg
+  - path: /assets/images/smokys/5.jpg
+  - path: /assets/images/smokys/6.jpg
+  - path: /assets/images/smokys/7.jpg
+  - path: /assets/images/smokys/8.jpg
 ---
 With Isaac getting to be a little older, we decided it was time to brave a longer trip. He travels really well and barely makes much of a fuss; even after almost two days in the car. I don't have memories of me being quite so agreeable on such long car rides. We normally alternate between the beach and the mountains but we had actually been to the beach several years in a row. It was time for a change. After tossing a few ideas around, we finally decided on Gatlinburg, TN. 
 
