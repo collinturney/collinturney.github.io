@@ -3,6 +3,7 @@ email: collinturney[at]gmail
 description: family, tinkering, and oxford commas
 baseurl: ""
 url: "https://collinturney.github.io"
-github_username: collinturney
-
 markdown: kramdown
+
+github_username: collinturney
+resume_url: https://www.visualcv.com/collinturney

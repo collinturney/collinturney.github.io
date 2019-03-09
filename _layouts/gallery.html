@@ -18,7 +18,7 @@ layout: default
       {% for image in page.images %}
         <!-- <a href="{{ image.path }}"><img src="{{ image.thumbnail }}" alt="{{ image.title}}"/></a> -->
         <a href="{{ image.path }}" data-lightbox="gallery" data-title="{{ image.title }}"><img src="{{ image.thumbnail }}" /></a>
-		{% endfor %}
+      {% endfor %}
     </p>
   </div>
 </article>

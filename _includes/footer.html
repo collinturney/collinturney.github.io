@@ -8,17 +8,16 @@
           <li>{{ site.email }}</li>
         </ul>
         <ul class="social-media-list">
+
           {% if site.github_username %}
           <li>
-            {% include icon-github.html username=site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}">
+              <span class="icon icon--github">{% include icon-github.svg %}</span>
+              <span class="username">{{ site.github_username }}</span>
+            </a>
           </li>
           {% endif %}
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
         </ul>
       </div>
 
