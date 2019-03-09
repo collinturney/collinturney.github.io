@@ -8,7 +8,7 @@ Every now and then it can be very handy to take a dynamically linked binary and 
 
 In order to compile statifier like the README mentions, you'll want to install the g++-multilib package in order to compile and run 32-bit applications on a modern 64-bit system.
 
-	collin@thinkpad ~ $ sudo apt instal g++-multilib
+	collin@thinkpad ~ $ sudo apt install g++-multilib
 
 Once that is done, you'll be able to extract, make, and make install statifier as you would expect... That's about as far as your luck will take you though. Actually running statifier to generate a static executable will give you a nice fresh core dump instead.
 
@@ -21,7 +21,7 @@ In order to fix this we need to disable address space randomization. This will a
 	collin@thinkpad ~ $ cat /proc/sys/kernel/randomize_va_space
 	2
 
-	collin@thinkpad ~ $ echo -n 0 >/proc/sys/kernel/randomize_va_space
+	root@thinkpad ~ # echo -n 0 >/proc/sys/kernel/randomize_va_space
 
 Now, statifier can be run without cores.
 
@@ -40,5 +40,5 @@ That's what we want.. But does it work?
 
 Good. Now, re-enable randomization again immediately before you are the victim of a primitive [buffer overflow](https://www.youtube.com/watch?v=1S0aBV-Waeo) attack.
 
-	collin@thinkpad ~ $ echo -n 2 >/proc/sys/kernel/randomize_va_space
+	root@thinkpad ~ # echo -n 2 >/proc/sys/kernel/randomize_va_space
 
