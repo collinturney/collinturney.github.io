@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "HDHomeRun Watch/Record"
+title:  "HDHomeRun CLI"
 date:   2016-01-03 18:17:43 -0600
-categories: hdhomerun python tv
+categories: hdhomerun python tv cli
 ---
 I really don't like paying for overpriced TV packages when we don't really watch much anyway. We're pretty much streaming everything these days. However, you can't stream local channels very well just yet. This prompted me to buy a HDHomeRun years ago and it has been great. I can simply run VLC on any device in the house and watch live TV. This really comes in handy when my son is watching Curious George on the living room TV and my wife and I happen to want to check out the local news for a couple minutes.
 
